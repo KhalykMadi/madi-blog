@@ -102,29 +102,29 @@
 
 <script src="{{asset('plugins/moment/moment.min.js')}}"></script>
 <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
-<script>
-    ClassicEditor
-        .create(document.querySelector('#editor'))
-    ClassicEditor
-        .create(document.querySelector('#editor2'))
-    ClassicEditor
-        .create(document.querySelector('#editor3'))
+{{--<script>--}}
+{{--    ClassicEditor--}}
+{{--        .create(document.querySelector('#editor'))--}}
+{{--    ClassicEditor--}}
+{{--        .create(document.querySelector('#editor2'))--}}
+{{--    ClassicEditor--}}
+{{--        .create(document.querySelector('#editor3'))--}}
 
 
-    ClassicEditor
-        .create(document.querySelector('#editor4'))
+{{--    ClassicEditor--}}
+{{--        .create(document.querySelector('#editor4'))--}}
 
 
-    ClassicEditor
-        .create(document.querySelector('#editor5'))
+{{--    ClassicEditor--}}
+{{--        .create(document.querySelector('#editor5'))--}}
 
 
-    ClassicEditor
-        .create(document.querySelector('#editor6'))
+{{--    ClassicEditor--}}
+{{--        .create(document.querySelector('#editor6'))--}}
 
 
 
-</script>
+{{--</script>--}}
 <script src="{{asset('plugins/daterangepicker/daterangepicker.js')}}"></script>
 <script src="{{asset('plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
 <script src="{{asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
@@ -132,6 +132,14 @@
 <style>
     .custom-file-input:lang(en)~.custom-file-label::after{
         content: "...";
+    }
+
+    .my-nav{
+        padding: 20px;
+    }
+
+    .my-nav svg{
+        width: 20px;
     }
 </style>
 

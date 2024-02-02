@@ -9,20 +9,20 @@
                             <div class="main__swiper">
                                 <div class="swiper mainSwiper">
                                     <div class="swiper-wrapper">
-                                        @foreach($contents as $content)
-                                        <div class="swiper-slide">
-                                            <div class="carousel">
-                                                <div class="inner-carousel">
-                                                    <img src="{{urldecode(url('storage',$content->img))}}" alt="">
-                                                    <a href="{{$content -> id}}news.html" class="news-info">
-                                                        <p>{!! $content['category_' . App::getLocale()] !!}</p>
-                                                        <h4>{!! $content['title_' . App::getLocale()] !!}</h4>
-                                                        <span>15:55</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        @endforeach
+{{--                                        @foreach($contents as $content)--}}
+{{--                                        <div class="swiper-slide">--}}
+{{--                                            <div class="carousel">--}}
+{{--                                                <div class="inner-carousel">--}}
+{{--                                                    <img src="{{urldecode(url('storage',$content->img))}}" alt="">--}}
+{{--                                                    <a href="{{$content -> id}}news.html" class="news-info">--}}
+{{--                                                        <p>{!! $content['category_' . App::getLocale()] !!}</p>--}}
+{{--                                                        <h4>{!! $content['title_' . App::getLocale()] !!}</h4>--}}
+{{--                                                        <span>15:55</span>--}}
+{{--                                                    </a>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        @endforeach--}}
                                     </div>
                                     <div class="mainSwiper-control">
                                         <div class="swiper-button-next-1">
@@ -57,18 +57,18 @@
                                 </h4>
                                 {{--                                @dd(session())--}}
                                 <div class="aqparat-info">
-                                    @foreach($contents as $content)
-                                        <div class="aqparat-info-block">
-                                            <a href="{{route('news', $content -> id)}}" class="aqparat-info-text">
-                                                <h4 class="info-text-category">{!!  $content['category_' . App::getLocale()]!!}</h4>
-                                                <h3>{!!$content['title_' . App::getLocale()]!!}</h3>
-                                                <span><img src="{{asset('assets/img/icon/time.svg')}}" alt="">  в 17:00</span>
-                                            </a>
-                                            <div class="aqparat-info-img">
-                                                <img src="{{urldecode(url('storage',$content->img))}}" alt="">
-                                            </div>
-                                        </div>
-                                    @endforeach
+{{--                                    @foreach($contents as $content)--}}
+{{--                                        <div class="aqparat-info-block">--}}
+{{--                                            <a href="{{route('news', $content -> id)}}" class="aqparat-info-text">--}}
+{{--                                                <h4 class="info-text-category">{!!  $content['category_' . App::getLocale()]!!}</h4>--}}
+{{--                                                <h3>{!!$content['title_' . App::getLocale()]!!}</h3>--}}
+{{--                                                <span><img src="{{asset('assets/img/icon/time.svg')}}" alt="">  в 17:00</span>--}}
+{{--                                            </a>--}}
+{{--                                            <div class="aqparat-info-img">--}}
+{{--                                                <img src="{{urldecode(url('storage',$content->img))}}" alt="">--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    @endforeach--}}
                                 </div>
                             </div>
                         </div>
@@ -79,10 +79,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="wrapper-banner">
-                                <a href="#" class="inner-banner">
-                                    @foreach($banners as $banner) @endforeach
-                                    <img src="{{urldecode(url('storage',$banner->img))}}" alt="banner">
-                                </a>
+{{--                                <a href="#" class="inner-banner">--}}
+{{--                                    @foreach($banners as $banner) @endforeach--}}
+{{--                                    <img src="{{urldecode(url('storage',$banner->img))}}" alt="banner">--}}
+{{--                                </a>--}}
                             </div>
                         </div>
                     </div>

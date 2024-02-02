@@ -10,6 +10,7 @@ class NewsController extends Controller
 {
     public function index()
     {
+
         $banners = Banner::all();
         $contents = Content::all();
         return view('main', compact('banners', 'contents'));

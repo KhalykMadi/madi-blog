@@ -21,7 +21,14 @@
                             </p>
                         </a>
                     </li>
-
+                    <li class="nav-item">
+                        <a href="{{route('admin.blog.worker.index')}}" class="nav-link">
+                            <i class="nav-icon far fa-clipboard"></i>
+                            <p>
+                                Worker
+                            </p>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
